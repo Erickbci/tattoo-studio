@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Medula+One&display=swap");
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+  color: #ffffff;
+  font-family: "Medula One", sans-serif;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .logo span {
+  font-size: 40px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li {
+  font-size: 32px;
+  list-style: none;
+  text-transform: uppercase;
+}
+header ul a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 32px;
+}
+header ul a:hover {
+  color: #c08046;
+}

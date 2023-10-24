@@ -1,0 +1,45 @@
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.artists-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 124px;
+}
+
+.artists-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 30px;
+}
+
+.artists-card-item {
+    width: 300px;
+    height: 470px;
+}
+
+.artist-social-info {
+    display: none;
+}
+
+.artists-card:hover  .artist-social-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+    /* top: -250px; */
+}
+.artists-card-item:hover {
+    filter: brightness(30%);
+}
+
+.artists-card:hover  .artist-social-info h2{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Russo One' sans-serif;
+    text-transform: uppercase;
+}
+
