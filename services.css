@@ -2,10 +2,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .services-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    justify-content: center;
+    gap: 120px;
 }
 
 .services-cards {
@@ -13,7 +11,6 @@
     flex-direction: row;
     align-items: center;
     gap: 120px;
-    margin-top: 120px;
 }
 
 .services-card-item {

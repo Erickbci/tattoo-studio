@@ -1,0 +1,69 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.book-section {
+    background: #191B1D;
+    justify-content: center;
+}
+
+.book-section h1 {
+    margin-bottom: 98px; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-section input, .book-section textarea {
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    padding: 14px 0 14px 20px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #757C7F;
+}
+
+.top-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+#name, #phone {
+    width: 250px;
+}
+
+#email {
+    width: 350px;
+}
+
+#message {
+    height: 250px;
+    width: 930px;
+    margin-bottom: 35px;
+}
+
+.btn_send-message {
+    width: 100%;
+    height: 50px;
+    background: #A27D4D;
+    border-style: none;
+    border-radius: 25px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn_send-message:hover {
+    transition: 0.4s;
+    background: #c08046;
+}

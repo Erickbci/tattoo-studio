@@ -4,6 +4,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
   padding: 24px 40px;
   color: #ffffff;
   font-family: "Medula One", sans-serif;
@@ -13,12 +14,18 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 header .logo span {
   font-size: 40px;
   font-weight: 400;
   margin-left: 16px;
+}
+
+header .logo span:hover {
+  transition: 0.4s;
+  color: #c08046;
 }
 
 header ul {
@@ -39,5 +46,6 @@ header ul a {
   margin-left: 32px;
 }
 header ul a:hover {
+  transition: 0.4s;
   color: #c08046;
 }
