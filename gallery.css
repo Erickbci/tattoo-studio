@@ -1,0 +1,15 @@
+.gallery-section {
+    margin-top: 100px;
+    height: 100%;
+}
+
+.gallery-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-content img {
+    width: 380px;
+    height: 500px;
+}
