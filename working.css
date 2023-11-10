@@ -1,0 +1,64 @@
+    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.working-section {
+    background-image: url('images/Background-working-section.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    /* gap: 100px; */
+}
+
+.working-content {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.working-header {
+    padding: 0;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.working-week {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.working-header h2, .working-week h2{
+    color: #A27D4D;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.working-header h2 span,.working-week h2 span {
+    color: white;
+    margin-left: 10px;
+}
+
+.working-days {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.working-week-day-card {
+    width: 200px;
+    height: 100px;
+    background-color: #000;
+    color: white;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    border: 2px solid #A27D4D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
