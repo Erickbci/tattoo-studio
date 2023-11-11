@@ -2,11 +2,6 @@ header {
     padding: 18px 20px;
 }
 
-section {
-  height: 100svh;
-  width: 100svw;
-}
-
 .navigations-laptop {
   display: none;
 }
