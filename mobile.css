@@ -2,6 +2,10 @@ header {
     padding: 18px 20px;
 }
 
+section {
+  height: 100svh;
+}
+
 .navigations-laptop {
   display: none;
 }
@@ -39,4 +43,9 @@ header {
   .welcome-content {
     display: flex;
     flex-direction: column !important;
+    max-width: 450px;
+  }
+
+  .text-area {
+    margin: 0;
   }
