@@ -6,10 +6,7 @@
     align-items: center; */
     /* height: 100vh; */
     gap: 120px;
-}
-
-.artists {
-    
+    padding-top: 50px;
 }
 
 .artists-cards {

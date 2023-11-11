@@ -2,7 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
+
+/* html {
+   scroll-behavior: smooth !important; 
+   overflow-y: scroll; 
+} */
 
 body {
   background-color: #0a0e13;
@@ -27,4 +33,16 @@ section {
     justify-content: start;
     align-items: center;
     height: 100vh;
+    scroll-snap-align: start;
+}
+
+#galeria {
+  
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
 }
