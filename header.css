@@ -50,6 +50,10 @@ header ul a:hover {
   color: #c08046;
 }
 
+.navigations {
+  display: none;
+}
+
 .animated-menu {
   display: none;
 }

@@ -1,5 +1,9 @@
-.navigations {
-    display: none;
+header {
+    padding: 18px 20px;
+}
+
+.navigations-laptop {
+  display: none;
 }
 
 .animated-menu {
@@ -30,4 +34,9 @@
   /* Rotate last bar */
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .welcome-content {
+    display: flex;
+    flex-direction: column !important;
   }

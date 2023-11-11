@@ -32,12 +32,9 @@ section {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    width: 100vw;
     height: 100vh;
-    scroll-snap-align: start;
-}
-
-#galeria {
-  
+    scroll-snap-align: center;
 }
 
 .container {
