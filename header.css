@@ -49,3 +49,7 @@ header ul a:hover {
   transition: 0.4s;
   color: #c08046;
 }
+
+.animated-menu {
+  display: none;
+}
