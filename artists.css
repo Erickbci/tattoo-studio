@@ -1,67 +1,84 @@
-    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
 .artists-section {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* height: 100vh; */
-    gap: 120px;
-    padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  padding-top: 5rem;
 }
 
 .artists-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    /* margin-top: 120px; */
-    gap: 30px;
+  width: min(var(--max-width), 100%);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 0 auto;
 }
 
 .artists-card-item {
-    width: 300px;
-    height: 470px;
+  background: #0f1216;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.artists-card-item img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .artist-social-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 32px;
+  display: grid;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem 1.5rem;
+  text-align: center;
 }
 
-.artist-social-info h2{
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 600;
-    font-family: 'Russo One' sans-serif;
-    text-transform: uppercase;
+.artist-social-info h2 {
+  color: var(--text);
+  font-size: 1.25rem;
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
 }
 
 .artist-social-info span {
-    color: #A27D4D;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Russo One' sans-serif;
-    text-transform: uppercase;
-    margin: 8px 0 14px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
 }
 
 .artists-social-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
 }
 
-.btn_social-media  {
-    background-color: #232728;
-    border-style: none;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+.btn_social-media {
+  background-color: #232728;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .btn_social-media img {
-    padding: 15px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+}
+
+.btn_social-media:hover,
+.btn_social-media:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  outline: none;
 }

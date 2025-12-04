@@ -1,47 +1,38 @@
-header {
-    padding: 18px 20px;
-}
+@media (max-width: 768px) {
+  /* Stack navigation and keep ample touch area on smaller screens */
+  header nav ul li a {
+    font-size: 0.95rem;
+  }
 
-.navigations-laptop {
-  display: none;
-}
-
-.animated-menu {
-    display: inline-block !important;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .animated-menu:hover div {
-    background-color: #c08046;
-  }
-  
-  /* Rotate first bar */
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  /* Fade out the second bar */
-  .change .bar2 {opacity: 0;}
-  
-  /* Rotate last bar */
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+  .start-content {
+    padding: 5rem 1.25rem 2.5rem;
   }
 
   .welcome-content {
-    display: flex;
-    flex-direction: column !important;
-    max-width: 450px;
+    gap: 1.5rem;
   }
 
-  .text-area {
-    margin: 0;
+  .services-section,
+  .artists-section,
+  .gallery-section,
+  .book-section,
+  .working-section,
+  .welcome-section {
+    padding: 3.5rem 1.25rem;
   }
+
+  .footer-content {
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Compact padding for very small screens */
+  section {
+    padding: 3rem 1rem;
+  }
+
+  header {
+    padding: 0.75rem 1rem;
+  }
+}

@@ -1,76 +1,78 @@
-    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
 footer {
-    width: 100%;
-    padding: 24px 32px;
-    color: white;
-    font-weight: 400;
-    font-family: 'Russo One', sans-serif;
-    font-size: 20px;
-    background: #0a0e13;
-    margin-top: 40px;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  color: var(--text);
+  font-weight: 400;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1rem;
+  background: #0a0e13;
+  border-top: 1px solid var(--border);
 }
 
 .footer-content {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 footer a {
-    text-decoration: none;
-    color: white;
-    margin-left: 5px;
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 5px;
 }
 
 .footer-social-buttons {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .footer-social-button {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #ffffff20;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  background: #0f1216;
 }
 
 .footer-social-button img {
-    width: 18px;
-    height: 18px;
+  width: 18px;
+  height: 18px;
 }
 
-.footer-social-button:hover {
-    transform: translateY(-2px);
-    border-color: #ffffff60;
+.footer-social-button:hover,
+.footer-social-button:focus-visible {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  outline: none;
 }
 
 @media (max-width: 768px) {
-    footer {
-        padding: 24px;
-    }
+  footer {
+    padding: 1.75rem 1.25rem;
+  }
 
-    .footer-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-social-buttons {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 520px) {
-    .footer-content {
-        gap: 16px;
-    }
-
-    .footer-social-buttons {
-        width: 100%;
-        justify-content: space-between;
-    }
+  .footer-social-buttons {
+    gap: 0.5rem;
+  }
 }
