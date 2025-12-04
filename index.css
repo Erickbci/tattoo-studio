@@ -12,6 +12,7 @@
 
 body {
   background-color: #0a0e13;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -32,14 +33,12 @@ section {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  /* width: 100%; */
+  overflow-y: auto;
+  min-height: 100vh;
+  width: 100%;
 }
