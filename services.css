@@ -1,46 +1,67 @@
-    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 .services-section {
-    justify-content: center;
-    gap: 120px;
+  background: var(--panel);
+  border-block: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
 }
 
 .services-cards {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 120px;
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.services-card-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 250px;
-    text-align: center;
+.services-cards .services-card-item {
+  background: #0f1216;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: clamp(1.25rem, 1vw + 1rem, 1.75rem) clamp(1rem, 0.5vw + 0.75rem, 1.35rem);
+  text-align: center;
+  display: grid;
+  gap: 0.75rem;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  height: 100%;
 }
 
 .services-card-item img {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 24px;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
 }
 
 .services-card-item span {
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 400;
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 8px;
+  color: var(--text);
+  font-size: clamp(1.05rem, 0.6vw + 1rem, 1.2rem);
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
 }
 
 .services-card-item p {
-    color: #757C7F;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 24px;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    gap: 2rem;
+  }
+
+  .services-cards {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-cards {
+    gap: 1.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
 }

@@ -1,64 +1,100 @@
-    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
 .working-section {
-    background-image: url('images/Background-working-section.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-    /* gap: 100px; */
+  background-image: url('images/Background-working-section.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.working-section::after {
+  /* Overlay to improve text legibility over the background */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 14, 19, 0.85), rgba(10, 14, 19, 0.9));
+  z-index: 0;
 }
 
 .working-content {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+  position: relative;
+  z-index: 1;
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 3rem;
+  text-align: center;
 }
 
 .working-header {
-    padding: 0;
-    flex-direction: column;
-    gap: 70px;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
 }
 
 .working-week {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
+  display: grid;
+  gap: 1.5rem;
 }
 
-.working-header h2, .working-week h2{
-    color: #A27D4D;
-    font-family: 'Russo One', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
+.working-header h2,
+.working-week h2 {
+  color: var(--accent);
+  font-family: 'Russo One', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.working-header h2 span,.working-week h2 span {
-    color: white;
-    margin-left: 10px;
+.working-header h2 span,
+.working-week h2 span {
+  color: var(--text);
+  margin-left: 0.35rem;
 }
 
 .working-days {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 }
 
 .working-week-day-card {
-    width: 200px;
-    height: 100px;
-    background-color: #000;
-    color: white;
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    border: 2px solid #A27D4D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--text);
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+}
+
+@media (max-width: 768px) {
+  .working-content {
+    gap: 2.25rem;
+  }
+
+  .working-week {
+    gap: 1.25rem;
+  }
+
+  .working-days {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .working-week-day-card {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .working-content {
+    gap: 3.5rem;
+  }
+
+  .working-week {
+    gap: 2rem;
+  }
 }
