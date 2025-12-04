@@ -1,12 +1,12 @@
-    @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
-
+/* Title styling aligned with global variables for consistent headings */
 .title {
-    color: #FFFFFF;
-    font-size: 32px;
-    font-weight: 400;
-    font-family: 'Russo One', sans-serif;
-    border-bottom: 1px solid #757C7F;
-    border-top: 1px solid #757C7F;
-    padding: 14px 0px;
-    text-transform: uppercase;
+  color: var(--text);
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.25rem);
+  font-weight: 400;
+  font-family: 'Russo One', sans-serif;
+  border-bottom: 1px solid var(--muted);
+  border-top: 1px solid var(--muted);
+  padding: 0.75rem 0;
+  text-transform: uppercase;
+  text-align: center;
 }

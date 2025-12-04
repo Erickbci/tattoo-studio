@@ -1,69 +1,53 @@
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 .book-section {
-    background: #191B1D;
-    justify-content: center;
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.25rem;
 }
 
 .book-section h1 {
-    margin-bottom: 98px; 
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.book-section input, .book-section textarea {
-    border: 2px solid #FFFFFF;
-    background: transparent;
-    padding: 14px 0 14px 20px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    color: #757C7F;
+  width: min(var(--max-width), 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
 }
 
 .top-inputs {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 35px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
-#name, #phone {
-    width: 250px;
-}
-
-#email {
-    width: 350px;
+.book-section input,
+.book-section textarea {
+  border: 2px solid #ffffff30;
+  background: #0f1216;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+  border-radius: 10px;
+  width: 100%;
 }
 
 #message {
-    height: 250px;
-    width: 930px;
-    margin-bottom: 35px;
+  min-height: 220px;
+  resize: vertical;
 }
 
 .btn_send-message {
-    width: 100%;
-    height: 50px;
-    background: #A27D4D;
-    border-style: none;
-    border-radius: 25px;
-    color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Russo One', sans-serif;
-    text-transform: uppercase;
-    cursor: pointer;
+  width: 100%;
+  text-align: center;
 }
 
-.btn_send-message:hover {
-    transition: 0.4s;
-    background: #c08046;
+.btn_send-message:hover,
+.btn_send-message:focus-visible {
+  background: transparent;
+  color: var(--accent);
 }
